@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* posisi btn theme */
+.btn {
+  display: absolute;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* style tombol tema */
+.btn-theme {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  font-size: 17px;
+  background-color: #444;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+/* style tombol tema end */
+
+/* tema gelap */
+body.dark-theme {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-theme .container {
+  background-color: #1e1e1e;
+}
+
+body.dark-theme .display {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-theme button {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-theme button:hover {
+  background-color: #696969a2;
+  color: white;
+}
+
+body.dark-theme .operator {
+  background-color: blue;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme .operator:hover {
+  background-color: rgb(26, 12, 177);
+  color: white;
+}
+
+.container {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 10px 20px 20px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.display {
+  height: 80px;
+  width: 100%;
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.174);
+  border-radius: 5px;
+  font-size: 25px;
+  color: black;
+  pointer-events: none;
+}
+
+.class-btn {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.operator {
+  background-color: orange;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.operator:hover {
+  background-color: rgb(225, 151, 13);
+}
